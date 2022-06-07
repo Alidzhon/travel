@@ -1,0 +1,42 @@
+.steps {
+     padding-top: 80px;
+     &__title {
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 53px;
+        color: $first-color;
+        text-align: center;
+        margin: 0;
+     }
+     &__wrapper {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         margin-top: 40px;
+     }
+     &__block {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+     &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px; 
+        background-color: #F2785C;
+        border-radius: 16px;
+     }
+     &__text {
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: $second-color;
+        margin-top: 30px;
+     }
+}

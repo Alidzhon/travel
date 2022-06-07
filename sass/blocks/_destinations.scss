@@ -1,0 +1,78 @@
+.destinations {
+    padding-top: 97px;
+    &__title {
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 53px;
+        color: $first-color;
+        text-align: center;
+        margin: 0;
+    }
+    &__carousel {
+        margin-top: 46px;
+    }
+    &__item {
+        position: relative;
+    }
+    &__text {
+        position: absolute;
+        left: 15px;
+        bottom: 40px;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 42px;
+        color: $third-color;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 24px;
+    }
+    &__dot {
+        width: 20px;
+        height: 20px;
+        background-color: rgba(242, 120, 92, 0.5);
+        border-radius: 100%;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    &__dot:first-child {
+        margin-left: 0;
+    }
+    &__dot-active {
+        background-color: #F2785C;
+    }
+    &__button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 228px;
+        height: 59px;
+        background-color: #0D606F;
+        box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+        border-radius: 10px;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        color: $third-color;
+        border: none;
+        cursor: pointer;
+        background-image: url('../icons/arrow.svg');
+        background-repeat: no-repeat;
+        background-position-y: 16px;
+        background-position-x: 16px;
+    }
+}

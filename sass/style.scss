@@ -1,0 +1,18 @@
+@import 'base/variables';
+html {
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+}
+
+.container {
+    max-width:  1440px;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/preview';
+@import 'blocks/steps';
+@import 'blocks/destinations';
+@import 'blocks/stories';
+@import 'blocks/footer';
+@import 'blocks/media';

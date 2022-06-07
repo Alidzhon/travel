@@ -1,0 +1,85 @@
+.stories {
+    padding-top: 80px;
+    &__title {
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 53px;
+        color: $first-color;
+        text-align: center;
+    }
+    &__block {
+        min-height: 1270px;
+        margin-top: 52px;
+        padding-top: 40px;
+        background-image: url('../img/main-bg.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;     
+    }
+    &__items {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 41px;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    &__item:last-child {
+        margin-bottom: 0;
+    }
+    &__description {
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 42px;
+        /* identical to box height */
+        color: #0D606F;
+        margin: 0;
+    }
+    &__texts {
+        max-width: 760px;
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #0D606F;
+        margin: 24px 0 0 0;
+        a {
+            font-family: 'Aleo';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            color: #0D606F;
+        }
+    }
+    &__button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 228px;
+        height: 59px;
+        background-color: #0D606F;
+        box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+        border-radius: 10px;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        color: $third-color;
+        border: none;
+        cursor: pointer;
+        background-image: url('../icons/arrow.svg');
+        background-repeat: no-repeat;
+        background-position-y: 16px;
+        background-position-x: 16px;
+    }
+}

@@ -1,0 +1,34 @@
+.footer {
+    padding: 25px 0 19px 0;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    &__text {
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        color: $third-color;
+    }
+    &__address {
+        margin-left: 455px;
+    }
+    &__items {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    &__item {
+        margin-right: 20px;
+        a {
+            text-decoration: none;
+        }
+    }
+    &__item:last-child {
+        margin-right: 0;
+    }    
+}
