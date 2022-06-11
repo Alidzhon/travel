@@ -12,22 +12,28 @@
     &__block {
         min-height: 1270px;
         margin-top: 52px;
-        padding-top: 40px;
         background-image: url('../img/main-bg.jpg');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;     
     }
+    &__shadow {
+        width: 100%;
+        height: 20%;
+        background: rgba(255, 255, 255, 0.7);
+    }
     &__items {
         display: flex;
         flex-direction: column;
-        padding-bottom: 41px;
+        padding: 40px 0 41px 0;
     }
     &__item {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         margin-bottom: 30px;
+    }
+    &__place {
+        margin-left: 40px;
     }
     &__item:last-child {
         margin-bottom: 0;
@@ -81,5 +87,9 @@
         background-repeat: no-repeat;
         background-position-y: 16px;
         background-position-x: 16px;
+        transition: 0.6s ease-in-out;
+    }
+    &__button:hover {
+        background-color: #000;
     }
 }
