@@ -15,6 +15,13 @@
     }
     &__item {
         position: relative;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__item:nth-child(1) {
+         display: none;
     }
     &__text {
         position: absolute;
@@ -78,5 +85,11 @@
     }
     &__button:hover {
         background-color: #000;
+    }
+    &__button-prev {
+        display: none;
+    }
+    &__button-next {
+        display: none;
     }
 }

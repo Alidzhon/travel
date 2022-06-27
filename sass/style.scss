@@ -6,6 +6,7 @@ html {
 
 .container {
     max-width:  1440px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -16,3 +17,5 @@ html {
 @import 'blocks/stories';
 @import 'blocks/footer';
 @import 'blocks/media';
+@import 'blocks/overlay';
+@import 'blocks/popup';

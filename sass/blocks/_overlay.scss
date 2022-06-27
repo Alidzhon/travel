@@ -1,0 +1,204 @@
+.overlay {
+      display: none;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      background-color: rgba(0,0,0,.56);
+      transition: 0.6s ease-in-out;
+      &__active {
+        display: block;
+      }
+      &__modal {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 650px;
+          min-height: 660px;
+          background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 16px;
+          padding: 25px 45px 23px 45px;
+      }
+      &__title {
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        color: $second-color;
+        margin: 0;
+        text-align: center;
+      }
+      &__facebook-link {
+        display: block;
+        width: 560px;
+        height: 46px;
+        background-color: #1877F2;
+        box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+        border-radius: 10px;
+        text-decoration: none;
+        margin: 0 auto;
+        margin-top: 30px;
+        padding-top: 16px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+            font-family: 'Red Hat Text';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 26px;
+            color: #FFFFFF;
+            margin-left: 15px;
+        }
+    }
+    &__google-link {
+        display: block;
+        width: 560px;
+        height: 46px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+        border-radius: 10px;
+        text-decoration: none;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding-top: 16px;
+    }
+    &__wrapper-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+            font-family: 'Red Hat Text';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 26px;
+            color: $second-color;
+            margin-left: 15px;
+        }
+    }
+    &__or {
+        position: relative;
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: rgba(13, 96, 111, 0.5);
+        text-align: center;
+        margin-top: 30px;
+    }
+    &__or::before {
+         content: "";
+         display: block;
+         position: absolute;
+         top: 12px;
+         left: 47px;
+         width: 261px;
+         height: 1px;
+         background-color: rgba(13, 96, 111, 0.5);  
+    }
+    &__or::after {
+         content: "";
+         display: block;
+         position: absolute;
+         top: 12px;
+         right: 47px;
+         width: 261px;
+         height: 1px;
+         background-color: rgba(13, 96, 111, 0.5);
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 560px;
+    }
+    &__label {
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $second-color;
+    }
+    &__label-password {
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $second-color;
+        margin-top: 20px;
+    }
+    &__input {
+        height: 54px;
+        background-color: #FFFFFF;
+        box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+        border-radius: 10px;
+        margin-top: 5px;
+        border: none;
+        padding: 0 8px 0 8px;
+    }
+    &__sign-in {
+        background-color: $second-color;
+        box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+        border-radius: 10px;
+        padding: 14px 0 14px 0;
+        border: none;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        color: #FFFFFF;
+        margin-top: 25px;
+        cursor: pointer;
+    }
+    &__forgot-link {
+        display: block;
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        color: $second-color;
+        text-align: center;
+        margin-top: 10px;
+    }
+    &__register {
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        color: rgba(13, 96, 111, 0.5);
+        text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+        text-align: center;
+        margin-top: 47px;
+        position: relative;
+    }
+    &__link {
+        font-weight: 700;
+        font-size: 15px;
+        color: $second-color;
+    }
+    &__register::before {
+         content: '';
+         display: block;
+         width: 560px;
+         height: 1px;
+         background-color: rgba(13, 96, 111, 0.5);
+         position: absolute;
+         top: -20px;
+         left: 50%;
+         transform: translateX(-50%);
+    }
+}

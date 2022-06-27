@@ -1,6 +1,6 @@
 .preview {
     padding-top: 32px;
-    &__taitel {
+    &__title {
         font-family: 'Aleo';
         font-style: normal;
         font-weight: 700;
@@ -44,7 +44,6 @@
         position: absolute;
         top: 32px;
         left: 41px;
-
     }
     &__input::placeholder {
         color: $first-color;

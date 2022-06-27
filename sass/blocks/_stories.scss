@@ -29,7 +29,6 @@
     }
     &__item {
         display: flex;
-        align-items: center;
         margin-bottom: 30px;
     }
     &__place {
@@ -44,7 +43,6 @@
         font-weight: 400;
         font-size: 35px;
         line-height: 42px;
-        /* identical to box height */
         color: #0D606F;
         margin: 0;
     }
