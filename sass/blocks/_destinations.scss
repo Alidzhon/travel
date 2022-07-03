@@ -13,15 +13,19 @@
     &__carousel {
         margin-top: 46px;
     }
+    &__items {
+        display: flex;
+        justify-content: center;
+        overflow-x: hidden;
+    }
     &__item {
         position: relative;
+        margin: 0 0 0 60px;
         img {
             width: 100%;
             height: auto;
+            border-radius: 16px;
         }
-    }
-    &__item:nth-child(1) {
-         display: none;
     }
     &__text {
         position: absolute;
@@ -33,12 +37,6 @@
         font-size: 32px;
         line-height: 42px;
         color: $third-color;
-    }
-    &__items {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
     }
     &__dots {
         display: flex;
