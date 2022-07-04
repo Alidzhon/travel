@@ -8,22 +8,23 @@
         line-height: 53px;
         color: $first-color;
         text-align: center;
-        margin: 0;
     }
     &__carousel {
         margin-top: 46px;
+        position: relative;
     }
     &__items {
+        max-width: 1440px;
+        margin: 0 auto;
         display: flex;
+        flex-wrap: nowrap;
         justify-content: center;
-        overflow-x: hidden;
+        overflow: hidden;
     }
     &__item {
         position: relative;
         margin: 0 0 0 60px;
         img {
-            width: 100%;
-            height: auto;
             border-radius: 16px;
         }
     }
@@ -55,7 +56,7 @@
     &__dot:first-child {
         margin-left: 0;
     }
-    &__dot-active {
+    &__dot:nth-child(2) {
         background-color: #F2785C;
     }
     &__button {

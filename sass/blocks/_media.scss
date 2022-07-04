@@ -1,3 +1,19 @@
+@media screen and (max-width: 960px) {
+    .destinations {
+        &__item {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        &__item:first-child {
+            display: none;
+        }
+        &__item:last-child {
+            display: none;
+        }
+    }
+}
 @media screen and (max-width: 944px) {
     .header {
         &__logo {
@@ -124,8 +140,8 @@
             margin-top: 0;
         }
         &__wrapper {
-            width: 360px;
-            height: 48px;
+            width: 576px;
+            height: 50px;
         }
         &__input {
             font-size: 14px;
@@ -171,12 +187,8 @@
             margin-top: 20px;
             position: relative;
         }
-        &__text {
-            top: 8px;
-            left: 15px;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 26px;
+        &__item {
+            margin: 0 0 0 0;
         }
         &__dots {
             margin: 0;
@@ -189,12 +201,6 @@
             width: 8px;
             height: 8px;
             margin-left: 6px;
-        }
-        &__dot:first-child {
-            background-color: #F2785C;
-        }
-        &__dot-active {
-            background-color: rgba(242, 120, 92, 0.5);
         }
         &__button {
             margin-top: 10px;
@@ -403,14 +409,9 @@
         }
         &__carousel {
             margin-top: 20px;
-            position: relative;
         }
-        &__text {
-            top: 8px;
-            left: 15px;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 26px;
+        &__items {
+            position: relative;
         }
         &__dots {
             margin: 0;
@@ -528,15 +529,75 @@
             background-color: transparent;
             border: none;
         }
+        &__item:nth-child(2) {
+            display: none;
+        }
+        &__item:nth-child(1) {
+            display: block;
+        }
+        &__text {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 26px;
+            color: #FFFFFF;
+            position: absolute;
+            top: 8px;
+            left: 15px;
+        }
+        &__dot:nth-child(2) {
+            background-color: rgba(242, 120, 92, 0.5);
+        }
+        &__dot:nth-child(1) {
+            background-color: #F2785C;
+        }
     }
 }
 @media screen and (max-width: 420px) {
+    .header {
+        &__gradient {
+            background: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%);
+        }
+    }
     .steps {
         &__text {
             font-size: 8px;
         }
     }
+    .destinations {
+        &__carousel {
+            margin-top: 10px;
+        }
+        &__item {
+            img {
+                width: 360px;
+                height: 210px;
+            }
+        }
+        &__button-prev {
+            left: 19px;
+        }
+        &__button-next {
+            right: 19px;
+        } 
+    }
+    .stories {
+        padding-top: 0px;
+        &__block {
+            margin-top: 0px;
+        }
+        &__description {
+            font-size: 9px;
+        }
+        &__texts {
+            font-size: 7px;
+            margin: 5px 0 0 0;
+            a {
+                line-height: 10px;
+            }
+        }
+    }
 }
+
 @media screen and (max-width: 380px) {
     .preview {
         &__wrapper {
@@ -547,6 +608,17 @@
         }
         &__button {
             font-size: 9px;
+        }
+    }   
+    .destinations {
+        &__carousel {
+            margin-top: 10px;
+        }
+        &__item {
+            img {
+                width: 296px;
+                height: 177px;
+            }
         }
     }
     .steps {
