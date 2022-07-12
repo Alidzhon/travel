@@ -560,7 +560,14 @@
     }
     .steps {
         &__text {
-            font-size: 8px;
+            font-size: 10px;  
+            line-height: 12px;
+            br {
+                display: block;
+            }
+        }
+        &__text-share {
+            line-height: 2;
         }
     }
     .destinations {
@@ -598,7 +605,6 @@
         }
     }
 }
-
 @media screen and (max-width: 380px) {
     .preview {
         &__wrapper {
@@ -624,7 +630,7 @@
     }
     .steps {
         &__text {
-            font-size: 6px;
+            font-size: 8px;
         }
     }
     .stories {

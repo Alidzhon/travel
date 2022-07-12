@@ -38,5 +38,8 @@
         line-height: 24px;
         color: $second-color;
         margin-top: 30px;
+        br {
+         display: none;
+        }
      }
 }
