@@ -4,6 +4,7 @@ window.addEventListener("DOMContentLoaded", () => {
      const hamburger = document.querySelector(".header__hamburger");
      const buttonClose = document.querySelector(".header__button-close");
      const body = document.querySelector("body");
+   
      
      function outsideClick(event) {
      const target = event.target;
@@ -35,6 +36,5 @@ window.addEventListener("DOMContentLoaded", () => {
      
      item.addEventListener("click", closeMenu);
      
-    });
-       
+    });      
 });

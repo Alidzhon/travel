@@ -303,8 +303,8 @@
             position: absolute;
             top: -240%;
             right: 0;
-            width: 165px;
-            height: 250px;
+            width: 150px;
+            height: 177px;
             background: #F2785C;
             box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
             border-radius: 10px;
@@ -317,6 +317,9 @@
         }
         &__сross {
             position: relative;
+        }
+        &__link {
+            font-size: 16px;
         }
         &__button-close {
             display: block;
