@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const password = document.getElementById('password');
 
     const openModal = () => {
-        overlay.classList.add('overlay__active');       
+        overlay.classList.add('overlay__active');      
     };
 
     const closeModal = () => {
