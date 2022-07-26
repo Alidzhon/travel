@@ -1,93 +1,224 @@
 .destinations {
-    padding-top: 97px;
-    &__title {
-        font-family: 'Red Hat Text';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 53px;
-        color: $first-color;
-        text-align: center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 0px auto 0 auto;
+    padding-top: 46px;
+  }
+  
+  .h2__destinations--position {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: $first-color;
+    text-align: center;
+  }
+  
+  .slider {
+    width: 2520px;
+    display: flex;
+    flex-direction: row;
+    margin: 46px 0 0 -540px;
+    gap: 60px;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+  .slider_arrows {
+    display: none;
+  }
+  .slider_arrows--size {
+    width: 30px;
+    height: 30px;
+    z-index: 10000;
+  }
+  
+  .slider_arrows--left {
+    background-image: url(./assets/svg/ep_arrow-up-bold-left-enabled.svg);
+    /* background-color: transparent; */
+    background-repeat: no-repeat;
+    background-position: 45%;
+    border: 0;
+    background-color: transparent;
+  }
+  
+  .slider_arrows--left:disabled {
+    background-image: url('../img/spain.jpg');
+  }
+  
+  .slider_arrows--right {
+    background-image: url('../img/usa.jpg');
+    background-repeat: no-repeat;
+    background-position: 45%;
+    border: 0;
+    background-color: transparent;
+  }
+  
+  .slider_arrows--right:disabled {
+    background-image: url('../img/usa.jpg');
+  }
+  
+  .slider__controls {
+    width: 80px;
+    height: 20px;
+    margin: 24px 679px 0 681px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .slider__controls_mini {
+    display: none;
+  }
+  
+  .slider__style {
+    display: flex;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .slider__one-spain {
+    background-image: url('../img/spain.jpg');
+  }
+  
+  .slider__two {
+    background-image: url('../img/japan.jpg');
+  }
+  
+  .slider__three {
+    background-image: url('../img/usa.jpg');
+  }
+  
+  .slide_option {
+    height: 20px;
+    width: 20px;
+    background: rgba(242, 120, 92, 0.5);
+    border-radius: 50%;
+  }
+  
+  .slide {
+    width: 800px;
+    height: 800px;
+    background-repeat: no-repeat;
+  }
+  
+  .slides__text {
+    margin: 718px 0 0 15px;
+    font-family: "Red Hat Text";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    color: #ffffff;
+    opacity: 0.7;
+  }
+  
+  .slider__controls--medium {
+    display: none;
+  }
+  
+  .slider__controls--button {
+    display: flex;
+    flex-direction: row;
+    width: 228px;
+    height: 59px;
+    background: #0d606f;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+      0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    border: none;
+  }
+  
+  .slider__controls--button--position {
+    margin: 40px 605px 0 607px;
+  }
+  
+  .slider__controls--button--arrow {
+    width: 40px;
+    height: 40px;
+    background-image: url('../icons/arrow.svg');
+    background-repeat: no-repeat;
+    margin: 17px 0 auto 25px;
+  }
+  
+  .slider__controls--button--text {
+    font-family: "Red Hat Text";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+    margin: auto 0 auto 10px;
+  }
+  
+  input[type="radio"] {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .slider__style input {
+    opacity: 0;
+  }
+  
+  .slider__style input:checked ~ .slide_option {
+    background-color: #f2785c;
+  }
+  
+  @media (min-width: 391px) and (max-width: 1439px) {
+    .slider_arrows {
+      position: absolute;
+      width: calc(100vw - 30px);
+      margin: 0 15px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
-    &__carousel {
-        margin-top: 46px;
-        position: relative;
+  
+    .slider {
+      width: calc(100vw + 30px + calc(100vw + 30px) + calc(100vw + 15px));
+      margin: 46px auto 0 0;
     }
-    &__items {
-        max-width: 1440px;
-        margin: 0 auto;
-        overflow: hidden;
-        position: relative;
+  
+    .slider__controls--button--position {
+      margin: 40px auto 0 auto;
     }
-    &__item {
-        position: relative;
-        margin: 0 0 0 60px;
-        transition: 0.6s ease-in-out;
-        img {
-            border-radius: 16px;
-        }
+  
+    .slider__controls {
+      margin: 40px auto 0 auto;
     }
-    &__text {
-        position: absolute;
-        left: 15px;
-        bottom: 40px;
-        font-family: 'Red Hat Text';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 42px;
-        color: $third-color;
+    .slider__controls--big {
+      display: none;
     }
-    // &__dots {
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     margin-top: 24px;
-    // }
-    // &__dot {
-    //     width: 20px;
-    //     height: 20px;
-    //     background-color: rgba(242, 120, 92, 0.5);
-    //     border-radius: 100%;
-    //     margin-left: 10px;
-    //     cursor: pointer;
-    // }
-    &__dot:first-child {
-        margin-left: 0;
+    .slider__controls--medium {
+      display: flex;
     }
-    &__dot:nth-child(2) {
-        background-color: #F2785C;
+    .h2__destinations--position {
+      font-size: 22px;
     }
-    &__button {
-        display: block;
-        margin: 0 auto;
-        margin-top: 40px;
-        width: 228px;
-        height: 59px;
-        background-color: #0D606F;
-        box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
-        border-radius: 10px;
-        font-family: 'Red Hat Text';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 32px;
-        color: $third-color;
-        border: none;
-        cursor: pointer;
-        background-image: url('../icons/arrow.svg');
-        background-repeat: no-repeat;
-        background-position-y: 16px;
-        background-position-x: 16px;
-        transition: 0.6s ease-in-out;
+  
+    .slide {
+      width: calc(100vw - 30px);
+      height: calc(100vw - 30px);
+      margin: 0 0 0 15px;
+      background-size: contain;
+      transition: all 0.5s ease;
     }
-    &__button:hover {
-        background-color: #000;
+    .slides__text {
+      margin: calc(100vw - 115px) 0 0 15px;
+      z-index: 1;
     }
-    &__button-prev {
-        display: none;
+    .slider__two {
+      z-index: 10;
     }
-    &__button-next {
-        display: none;
+  
+    .slider__three {
+      z-index: 100;
     }
-}
+  }
