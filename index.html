@@ -80,76 +80,42 @@
          </section>
          <!-- /steps -->
          <section class="destinations" id="destinations">
-            <h2 class="h2__destinations--position" id="section__destinations--anchor">POPULAR DESTINATIONS</h2>
-            <div class="slider">
-                <div class="slider_arrows">
-                    <button class="slider_arrows--size slider_arrows--left" disabled></button>
-                    <button class="slider_arrows--size slider_arrows--right"></button>
+            <h2 class="destinations__title">POPULAR DESTINATIONS</h2>
+            <div class="destinations__slider slider">
+                <div class="slider__container">
+                    <div class="slider__wrapper">
+                        <div class="slider__item" id="s1">
+                            <img src="img/spain.jpg" alt="spain-picture">
+                            <span class="text">SPAIN</span>
+                        </div>
+                        <div class="slider__item" id="s2">
+                            <img src="img/japan.jpg" alt="japan-picture">
+                            <span class="text">JAPAN</span>
+                        </div>
+                        <div class="slider__item" id="s3">
+                            <img src="img/usa.jpg" alt="usa-picture">
+                            <span class="text">USA</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="slider__controls slider__controls_mini">
-                    <label for="slider__one" class="slider__style">
-                        <input type="radio" id="slider__one--mini" name="slider--mini" checked="checked">
-                        <span class="slide_option"></span>
-                    </label>
-
-                    <label for="slider__two" class="slider__style">
-                        <input type="radio" id="slider__two--mini" name="slider--mini">
-                        <span class="slide_option"></span>
-                    </label>
-
-                    <label for="slider__three" class="slider__style">
-                        <input type="radio" id="slider__three--mini" name="slider--mini">
-                        <span class="slide_option"></span></label>
-                </div>
-                <div class="slide slider__one-spain">
-                    <p class="slides__text">SPAIN</p>
-                </div>
-                <div class="slide slider__two">
-                    <p class="slides__text">JAPAN</p>
-                </div>
-                <div class="slide slider__three">
-                    <p class="slides__text">USA</p>
+                <div class="slider__controls">
+                    <div class="slider__arrows arrows">
+                        <div class="arrows__item arrows__item_prev">
+                            <img src="images/icons/slider-arrow-prev.svg" alt="arrow-left">
+                        </div>
+                        <div class="arrows__item arrows__item_next">
+                            <img src="images/icons/slider-arrow-next.svg" alt="arrow-right">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="slider__controls slider__controls--big">
-                <label for="slider__one" class="slider__style" id="control__one">
-                    <input type="radio" id="slider__one" name="slider">
-                    <span class="slide_option"></span>
-                </label>
-
-                <label for="slider__two" class="slider__style" id="control__two">
-                    <input type="radio" id="slider__two" name="slider" checked="checked">
-                    <span class="slide_option"></span>
-                </label>
-
-                <label for="slider__three" class="slider__style" id="control__three">
-                    <input type="radio" id="slider__three" name="slider">
-                    <span class="slide_option"></span>
-                </label>
+            <div class="dots">
+                <div class="dot1"></div>
+                <div class="dot2 active"></div>
+                <div class="dot3"></div>
             </div>
-
-            <div class="slider__controls slider__controls--medium">
-                <label for="slider__one" class="slider__style">
-                    <input type="radio" id="slider__one--medium" name="slider--medium" checked="checked">
-                    <span class="slide_option"></span>
-                </label>
-
-                <label for="slider__two" class="slider__style">
-                    <input type="radio" id="slider__two--medium" name="slider--medium">
-                    <span class="slide_option"></span>
-                </label>
-
-                <label for="slider__three" class="slider__style">
-                    <input type="radio" id="slider__three--medium" name="slider--medium">
-                    <span class="slide_option"></span>
-                </label>
-            </div>
-
-            <button class="slider__controls--button slider__controls--button--position buttons__hover">
-                <svg class="slider__controls--button--arrow"></svg>
-                <span class="slider__controls--button--text">Find More</span>
-            </button>
-         </section>
+            <button class="button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Find More</button>
+        </section>
           <!-- /destinations -->
          <section class="stories" id="stories">
                <h2 class="stories__title container">TRAVEL STORIES</h2>

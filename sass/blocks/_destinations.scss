@@ -1,224 +1,127 @@
 .destinations {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    margin: 0px auto 0 auto;
-    padding-top: 46px;
-  }
-  
-  .h2__destinations--position {
-    margin: 0 auto;
-    text-align: center;
-    font-family: 'Red Hat Text';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 53px;
-    color: $first-color;
-    text-align: center;
-  }
-  
-  .slider {
-    width: 2520px;
     display: flex;
-    flex-direction: row;
-    margin: 46px 0 0 -540px;
-    gap: 60px;
+    flex-direction: column;
     align-items: center;
-    transition: all 0.5s ease;
-  }
-  .slider_arrows {
-    display: none;
-  }
-  .slider_arrows--size {
-    width: 30px;
-    height: 30px;
-    z-index: 10000;
-  }
-  
-  .slider_arrows--left {
-    background-image: url(./assets/svg/ep_arrow-up-bold-left-enabled.svg);
-    /* background-color: transparent; */
-    background-repeat: no-repeat;
-    background-position: 45%;
-    border: 0;
-    background-color: transparent;
-  }
-  
-  .slider_arrows--left:disabled {
-    background-image: url('../img/spain.jpg');
-  }
-  
-  .slider_arrows--right {
-    background-image: url('../img/usa.jpg');
-    background-repeat: no-repeat;
-    background-position: 45%;
-    border: 0;
-    background-color: transparent;
-  }
-  
-  .slider_arrows--right:disabled {
-    background-image: url('../img/usa.jpg');
-  }
-  
-  .slider__controls {
-    width: 80px;
-    height: 20px;
-    margin: 24px 679px 0 681px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    padding-top: 97px;
+}
+.destinations__title {
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 53px;
+        color: $first-color;
+        text-align: center;
+}
+.slider {
+    position: relative;
     display: flex;
-    flex-direction: row;
-    gap: 10px;
-  }
-  
-  .slider__controls_mini {
-    display: none;
-  }
-  
-  .slider__style {
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.slider__container {
+    position: relative;
     display: flex;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  .slider__one-spain {
-    background-image: url('../img/spain.jpg');
-  }
-  
-  .slider__two {
-    background-image: url('../img/japan.jpg');
-  }
-  
-  .slider__three {
-    background-image: url('../img/usa.jpg');
-  }
-  
-  .slide_option {
-    height: 20px;
-    width: 20px;
-    background: rgba(242, 120, 92, 0.5);
-    border-radius: 50%;
-  }
-  
-  .slide {
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+.slider__wrapper {
+    position: relative;
+    display: flex;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.slider__item {
     width: 800px;
     height: 800px;
-    background-repeat: no-repeat;
-  }
-  
-  .slides__text {
-    margin: 718px 0 0 15px;
-    font-family: "Red Hat Text";
+    margin: 0 30px;
+    border-radius: 16px;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+}
+.text {
+    position: absolute;
+    bottom: 40px;
+    left: 15px;
+    font-family: 'Red Hat Text';
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
     line-height: 42px;
-    color: #ffffff;
-    opacity: 0.7;
-  }
-  
-  .slider__controls--medium {
-    display: none;
-  }
-  
-  .slider__controls--button {
+    color: #FFFFFF;
+}
+.slider__controls {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+}
+.slider__controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.arrows {
+    display: none;
+}
+
+.dots {
+    display: flex;
+    margin-bottom: 41px;
+}
+
+.dot1 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(242, 120, 92, 0.5);
+    transition: 0.2s;
+    margin-right: 10px;
+}
+.dot2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(242, 120, 92, 0.5);
+    transition: 0.2s;
+    margin-right: 10px;
+}
+.dot3 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(242, 120, 92, 0.5);
+    transition: 0.2s;
+    margin-right: 10px;
+}
+
+.active {
+    background-color: #F2785C;
+}
+
+.button {
+    display: block;
+    margin: 0 auto;
     width: 228px;
     height: 59px;
-    background: #0d606f;
-    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
-      0px 2px 3px rgba(13, 96, 111, 0.16);
+    background-color: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
     border-radius: 10px;
-    border: none;
-  }
-  
-  .slider__controls--button--position {
-    margin: 40px 605px 0 607px;
-  }
-  
-  .slider__controls--button--arrow {
-    width: 40px;
-    height: 40px;
-    background-image: url('../icons/arrow.svg');
-    background-repeat: no-repeat;
-    margin: 17px 0 auto 25px;
-  }
-  
-  .slider__controls--button--text {
-    font-family: "Red Hat Text";
+    font-family: 'Red Hat Text';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
-    color: #ffffff;
-    margin: auto 0 auto 10px;
-  }
-  
-  input[type="radio"] {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-  }
-  
-  .slider__style input {
-    opacity: 0;
-  }
-  
-  .slider__style input:checked ~ .slide_option {
-    background-color: #f2785c;
-  }
-  
-  @media (min-width: 391px) and (max-width: 1439px) {
-    .slider_arrows {
-      position: absolute;
-      width: calc(100vw - 30px);
-      margin: 0 15px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  
-    .slider {
-      width: calc(100vw + 30px + calc(100vw + 30px) + calc(100vw + 15px));
-      margin: 46px auto 0 0;
-    }
-  
-    .slider__controls--button--position {
-      margin: 40px auto 0 auto;
-    }
-  
-    .slider__controls {
-      margin: 40px auto 0 auto;
-    }
-    .slider__controls--big {
-      display: none;
-    }
-    .slider__controls--medium {
-      display: flex;
-    }
-    .h2__destinations--position {
-      font-size: 22px;
-    }
-  
-    .slide {
-      width: calc(100vw - 30px);
-      height: calc(100vw - 30px);
-      margin: 0 0 0 15px;
-      background-size: contain;
-      transition: all 0.5s ease;
-    }
-    .slides__text {
-      margin: calc(100vw - 115px) 0 0 15px;
-      z-index: 1;
-    }
-    .slider__two {
-      z-index: 10;
-    }
-  
-    .slider__three {
-      z-index: 100;
-    }
-  }
+    color: $third-color;
+    border: none;
+    cursor: pointer;
+    background-image: url('../icons/arrow.svg');
+    background-repeat: no-repeat;
+    background-position-y: 16px;
+    background-position-x: 16px;
+    transition: 0.6s ease-in-out;
+}
