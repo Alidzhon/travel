@@ -1,10 +1,10 @@
-const slider = document.querySelector('.slider');
-const slideWrap = document.querySelector('.slider__wrapper');
-const slides = document.querySelectorAll('.slider__item');
-const slide = document.querySelector('.slider__item');
-const dot1 = document.querySelector('.dot1');
-const dot2 = document.querySelector('.dot2');
-const dot3 = document.querySelector('.dot3');
+const slider = document.querySelector('.destinations__slider-slider');
+const slideWrap = document.querySelector('.destinations__slider-wrapper');
+const slides = document.querySelectorAll('.destinations__slider-item');
+const slide = document.querySelector('.destinations__slider-item');
+const dot1 = document.querySelector('.destinations__dot1');
+const dot2 = document.querySelector('.destinations__dot2');
+const dot3 = document.querySelector('.destinations__dot3');
 
 const prevBtn = document.querySelector('.arrows__item_prev');
 const nextBtn = document.querySelector('.arrows__item_next');
@@ -36,9 +36,9 @@ if (screen > 620) {
         slideWidth = slide.offsetWidth + 2 * parseInt(getComputedStyle(slide, true).marginRight);
         moveLeft(slideWidth);
         document.querySelector('#s2').classList.add('left');
-        dot3.classList.add('active');
-        dot2.classList.remove('active');
-        dot1.classList.remove('active');
+        dot3.classList.add('destinations__active');
+        dot2.classList.remove('destinations__active');
+        dot1.classList.remove('destinations__active');
         document.querySelector('#b3').checked = true;
     });
 
@@ -46,9 +46,9 @@ if (screen > 620) {
         slideWidth = slide.offsetWidth + 2 * parseInt(getComputedStyle(slide, true).marginRight);
         moveRight(slideWidth);
         document.querySelector('#s2').classList.add('right');
-        dot1.classList.add('active');
-        dot3.classList.remove('active');
-        dot2.classList.remove('active');
+        dot1.classList.add('destinations__active');
+        dot3.classList.remove('destinations__active');
+        dot2.classList.remove('destinations__active');
         document.querySelector('#b1').checked = true;
     });
 
@@ -56,11 +56,10 @@ if (screen > 620) {
         if (this.classList.contains('right')) {
             slideWidth = slide.offsetWidth + 2 * parseInt(getComputedStyle(slide, true).marginRight);
             moveLeft(0.0001 * slideWidth);
-            dot3.classList.remove('active');
-            dot2.classList.add('active');
-            dot1.classList.remove('active');
-            this.classList.remove('right');
-            
+            dot3.classList.remove('destinations__active');
+            dot2.classList.add('destinations__active');
+            dot1.classList.remove('destinations__active');
+            this.classList.remove('destinations__active');
         }
 
         if (this.classList.contains('left')) {
@@ -71,8 +70,6 @@ if (screen > 620) {
         }
     });
 }
-
-
 
 //* Mobile version ====================================================================================
 

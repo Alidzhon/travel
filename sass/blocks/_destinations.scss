@@ -6,8 +6,7 @@
     overflow: hidden;
     background-color: #FFFFFF;
     padding-top: 97px;
-}
-.destinations__title {
+    &__title {
         font-family: 'Red Hat Text';
         font-style: normal;
         font-weight: 500;
@@ -15,113 +14,105 @@
         line-height: 53px;
         color: $first-color;
         text-align: center;
-}
-.slider {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-}
-.slider__container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    margin-bottom: 24px;
-}
-.slider__wrapper {
-    position: relative;
-    display: flex;
-    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-.slider__item {
-    width: 800px;
-    height: 800px;
-    margin: 0 30px;
-    border-radius: 16px;
-    object-fit: cover;
-    overflow: hidden;
-    position: relative;
-}
-.text {
-    position: absolute;
-    bottom: 40px;
-    left: 15px;
-    font-family: 'Red Hat Text';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 42px;
-    color: #FFFFFF;
-}
-.slider__controls {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.slider__controls {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.arrows {
-    display: none;
-}
-
-.dots {
-    display: flex;
-    margin-bottom: 41px;
-}
-
-.dot1 {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: rgba(242, 120, 92, 0.5);
-    transition: 0.2s;
-    margin-right: 10px;
-}
-.dot2 {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: rgba(242, 120, 92, 0.5);
-    transition: 0.2s;
-    margin-right: 10px;
-}
-.dot3 {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: rgba(242, 120, 92, 0.5);
-    transition: 0.2s;
-    margin-right: 10px;
-}
-
-.active {
-    background-color: #F2785C;
-}
-
-.button {
-    display: block;
-    margin: 0 auto;
-    width: 228px;
-    height: 59px;
-    background-color: #0D606F;
-    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
-    border-radius: 10px;
-    font-family: 'Red Hat Text';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
-    color: $third-color;
-    border: none;
-    cursor: pointer;
-    background-image: url('../icons/arrow.svg');
-    background-repeat: no-repeat;
-    background-position-y: 16px;
-    background-position-x: 16px;
-    transition: 0.6s ease-in-out;
+    }
+    &__slider-slider {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+    &__slider-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        margin-bottom: 24px;
+    }
+    &__slider-wrapper {
+        position: relative;
+        display: flex;
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    &__slider-item {
+        width: 800px;
+        height: 800px;
+        margin: 0 30px;
+        border-radius: 16px;
+        object-fit: cover;
+        overflow: hidden;
+        position: relative;
+    }
+    &__text {
+        position: absolute;
+        bottom: 40px;
+        left: 15px;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 42px;
+        color: #FFFFFF;
+    }
+    &__slider-controls {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__slider-arrows {
+        display: none;
+    }
+    &__dots {
+        display: flex;
+        margin-bottom: 41px;
+    }
+    &__dot1 {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: rgba(242, 120, 92, 0.5);
+        transition: 0.2s;
+        margin-right: 10px;
+    }
+    &__dot2 {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: rgba(242, 120, 92, 0.5);
+        transition: 0.2s;
+        margin-right: 10px;
+    }
+    &__dot3 {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: rgba(242, 120, 92, 0.5);
+        transition: 0.2s;
+        margin-right: 10px;
+    }
+    &__active {
+        background-color: #F2785C;
+    }
+    &__button {
+        display: block;
+        margin: 0 auto;
+        width: 228px;
+        height: 59px;
+        background-color: #0D606F;
+        box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+        border-radius: 10px;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        color: $third-color;
+        border: none;
+        cursor: pointer;
+        background-image: url('../icons/arrow.svg');
+        background-repeat: no-repeat;
+        background-position-y: 16px;
+        background-position-x: 16px;
+        transition: 0.6s ease-in-out;
+    }
 }
