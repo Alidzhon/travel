@@ -6,8 +6,8 @@ const dot1 = document.querySelector('.destinations__dot1');
 const dot2 = document.querySelector('.destinations__dot2');
 const dot3 = document.querySelector('.destinations__dot3');
 
-const prevBtn = document.querySelector('.arrows__item_prev');
-const nextBtn = document.querySelector('.arrows__item_next');
+const prevBtn = document.querySelector('.destinations__arrows-prev');
+const nextBtn = document.querySelector('.destinations__arrows-next');
 
 
 let slideWidth;

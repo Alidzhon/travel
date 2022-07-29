@@ -429,7 +429,7 @@
             margin-left: 6px;
         }
         &__button {
-            margin-top: 10px;
+            margin-top: -10px;
             width: 92px;
             height: 30px;
             background-image: url('../icons/arrow-right.svg');
@@ -574,21 +574,45 @@
         }
     }
     .destinations {
-        &__carousel {
-            margin-top: 10px;
-        }
-        &__item {
+        &__slider-item{
             img {
                 width: 360px;
                 height: 210px;
             }
         }
-        &__button-prev {
-            left: 19px;
+        &__dots {
+            position: absolute;
+            bottom: 40px;
         }
-        &__button-next {
-            right: 19px;
-        } 
+        &__dot1 {
+            width: 8px;
+            height: 8px;
+            margin-right: 6px;
+        }
+        &__dot2 {
+            width: 8px;
+            height: 8px;
+            margin-right: 6px;
+        }
+        &__dot3 {
+            width: 8px;
+            height: 8px;
+            margin-right: 6px;
+        }
+        &__arrows-prev {
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: -309px;
+        }
+        &__arrows-next {
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 309px;
+        }
     }
     .stories {
         padding-top: 0px;

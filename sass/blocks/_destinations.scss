@@ -35,8 +35,6 @@
         transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
     &__slider-item {
-        width: 800px;
-        height: 800px;
         margin: 0 30px;
         border-radius: 16px;
         object-fit: cover;
@@ -54,12 +52,10 @@
         line-height: 42px;
         color: #FFFFFF;
     }
-    &__slider-controls {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    &__arrows-prev {
+        display: none;
     }
-    &__slider-arrows {
+    &__arrows-next {
         display: none;
     }
     &__dots {
@@ -93,6 +89,7 @@
     &__active {
         background-color: #F2785C;
     }
+
     &__button {
         display: block;
         margin: 0 auto;
