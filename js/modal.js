@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const buttonSignIn = document.querySelector('.overlay__sign-in');
     const email = document.getElementById('email');
     const password = document.getElementById('password');
-
+    const headerLinkAccount = document.querySelector('.header__link-account');
     const openModal = () => {
         overlay.classList.add('overlay__active');      
     };
@@ -14,6 +14,8 @@ window.addEventListener('DOMContentLoaded', () => {
     };
 
     headerButton.addEventListener('click', openModal);
+    headerLinkAccount.addEventListener('click', openModal);
+
 
     overlay.addEventListener('click', (event) => {
         // console.log(event.target);

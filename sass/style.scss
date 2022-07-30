@@ -19,3 +19,58 @@ html {
 @import 'blocks/media';
 @import 'blocks/overlay';
 @import 'blocks/popup';
+
+@media screen and (max-width: 820px) {
+    .overlay {
+        &__modal {
+            width: 230px;
+            min-height: 300px;
+        }
+        &__google-link {
+            width: 244px;
+        }
+        &__facebook-link {
+            width: 244px;
+        }
+        &__title {
+            font-size: 20px;
+        }
+        &__wrapper {
+            span {
+                font-size: 16px;
+            }
+        }
+        &__wrapper-block {
+            span {
+                font-size: 16px;
+            }
+        }
+        &__input {
+            height: 36px;
+        }
+        &__facebook-link {
+            margin-top: 12px;
+        }
+        &__or::before {
+           width: 50px;
+        }
+        &__or::after {
+            width: 50px;
+        }
+        &__form {
+            width: 244px;
+        }
+    }
+    .popup {
+        &__title {
+            font-size: 20px;
+        }
+        &__block {
+            width: 230px;
+            min-height: 300px;
+        }
+        &__form {
+            width: 244px;
+        }
+    }
+}
